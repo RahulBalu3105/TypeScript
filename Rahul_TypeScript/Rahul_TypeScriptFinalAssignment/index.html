@@ -1,0 +1,57 @@
+
+<html>
+<head>
+   
+    <title>Online Course Registration</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <p><h1>Online Course Registration</h1>
+    </p>
+    <div id="mainDiv"> 
+        <p>User Name &emsp;
+            <input type="text" id="name">
+        </p>
+        <p>
+            Age &emsp; 
+            <input type="text" id="age">
+        </p>
+        <p>
+            Phone Number &emsp;
+            <input type="text" id="phoneNo">
+        </p>
+        <p>
+            <button onclick="UserRegistration()">User Register</button>
+            &nbsp;
+            <button onclick="Login()">Login</button>
+        </p>
+    </div>
+    <div id="optionDiv">
+        <p>
+            <button onclick="AvailableCourse()">Available Course</button> 
+            &nbsp;
+            <button onclick="EnrolledCourse()">Enrolled Course </button>
+        </p>
+    </div>
+    <div id="courseDiv">
+    Courses 
+    <select id="courses">
+        <option value="">Select your Courses </option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">C#</option>
+        <option value="4">JavaScript</option>
+        <option value="5">TypeScript</option>
+    </select>
+    <p>Total Number of Days &emsp;
+        <input type="number" id="totalDays">
+    </p>
+    <button onclick="Enroll()">Enroll</button>
+    </div>
+    <div id="enrollDiv">
+    <label id="selectedCourses"></label>
+    
+</div>
+</body>
+</html>
